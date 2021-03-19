@@ -1,6 +1,16 @@
+/*
+ * Check whether the plant needs watering
+ *
+ * Setup:
+ * Connect one nail to 5V output
+ * Connect the other nail to A0 and ground it over a 10K resistor
+ * Put both nails into the plant earth
+ * Connect the LED to digital pin 13
+ * Adjust the threshold accordingly
+ */
 const short SENSOR_THRESHOLD = 610;
 const short BLINK_DIFF = 10;
-const short INFO_WAITING = 10; // every 100 loops print the current analog value
+const short INFO_WAITING = 10; // every INFO_WAITING loops print the current analog value
 const short DELAY = 1000;
 
 int sensorPin = A0;
